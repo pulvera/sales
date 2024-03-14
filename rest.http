@@ -1,0 +1,58 @@
+### Post sales
+POST http://localhost:3000/sales
+Content-Type: application/json
+
+{
+    "vendorName": "Anne",
+    "sales": 6,
+    "dateCreated" : "March 14, 2024"
+}
+
+### Post employee
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "fName": "Anne",
+    "mName": "Kong",
+    "lName": "Bucol",
+    "age" : 28,
+    "address" : "Balulang",
+    "birthday" : "January 1",
+    "employee_id" : 123
+}
+
+### Get all employee
+GET http://localhost:3000/employees
+
+### Get all sales
+GET http://localhost:3000/sales
+
+### Get  employee by its id
+GET http://localhost:3000/employees/
+
+### Get  sales by its id
+GET http://localhost:3000/sales/65f2e6e64d541d49331e22b0
+
+### Delete employee by its id
+DELETE http://localhost:3000/employees/65f2e6e64d541d49331e22b0
+
+### Delete sales by its id
+DELETE http://localhost:3000/sales/65f2e6e64d541d49331e22b0
+
+### Patch employee by its id
+PATCH http://localhost:3000/employees/
+Content-Type: application/json
+
+{
+"employee_id": "345"
+}
+
+### Patch sales by its id
+PATCH http://localhost:3000/sales/65f2e6e64d541d49331e22b0
+Content-Type: application/json
+
+{
+"vendorName": "Kyla",
+"sales" : 500
+}
